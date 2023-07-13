@@ -1,7 +1,7 @@
-const getBracket = require('./get-bracket');
+const findBracket = require('./find-bracket');
 
 const isBracketted = value => {
-  const bracket = getBracket(value);
+  const bracket = findBracket(value);
   return (bracket && isValid(value));
 };
 
